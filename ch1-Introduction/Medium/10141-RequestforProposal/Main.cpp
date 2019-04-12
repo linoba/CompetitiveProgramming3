@@ -7,7 +7,6 @@ int main( int argc, const char* argv[]) {
 	int n, p;
 	std::cin >> n >> p;
 	int test_case = 0;
-	//std::cout << n << " " << p << std::endl;
 	while (n!=0 && p!=0) {
 		std::string name, best_name;
 		double price, best_price;
@@ -15,11 +14,9 @@ int main( int argc, const char* argv[]) {
 		std::getline(std::cin, name); // line break
 		for (int i=0; i<n; i++) { 
 			std::getline(std::cin, name); 
-			//std::cout << i << " " << name << std::endl;
 		}
 		for (int i=0; i<p; i++) { 
 			std::getline(std::cin, name); 
-			//std::cout << i << " " << name << std::endl;
 			std::cin >> price;
 			std::cin >> req;
 			if (i==0 || (req > best_req)) {
@@ -40,7 +37,6 @@ int main( int argc, const char* argv[]) {
 		std::cout << best_name << std::endl;
 		test_case++;
 		std::cin >> n >> p;
-		//std::cout << n << " " << p << std::endl;
 	}
 
 	return 0;
